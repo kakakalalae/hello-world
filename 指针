@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<string.h>
+struct Book {
+	char name[100];
+	short price;
+};
+int main() {
+	struct Book bb= { "爱卡西亚暴雨",22 };
+    struct  Book* aa = &bb;
+	printf("书的价格是：%d\n", aa->price);
+	printf("书的名字是：%s\n", aa->name);
+
+
+
+
+	return 0;
+}
